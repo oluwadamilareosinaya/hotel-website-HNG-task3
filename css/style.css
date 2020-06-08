@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5fafe;
+    /* color: hsl(243, 87%, 12%); */
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+footer {
+    background-color: #21273d;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: #1c2133;
+}
+
+.header__logo {
+    align-items: center;
+    width: 234px;
+    height: 88px;
+    left: 843px;
+    top: 36px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 88px;
+    letter-spacing: 0.065em;
+    color: #d19f4e;
+}
+
+.header__icon {
+    margin left: 5rem
+}
+
+.header__link {
+    display: inline-block;
+    color: white;
+    font-weight: 400;
+    font-size: 0.8rem;
+    background-color: #d19f4e;
+    border: 2px solid #d19f4e;
+    padding: 0.5rem;
+    margin: 1rem; 
+}
+
+.intro__list {
+    background-color: #21273D;
+}
+
+.intro__menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    font-size: 1rem;
+    color: white;
+}
+
+.intro__menu>* {
+    margin: 2rem;
+}
+
+.intro__content {
+    text-align: center;
+    color: white;
+    padding: 20rem;
+    background: rgba(33, 39, 61, 0.67);
+    background: no-repeat center/cover url("../img/0f665896259ee788d9cc533ba916d764.jpg");
+}
+
+.intro__heading {
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    padding: 3rem;
+    padding-top: 10em;
+    font-size: 0.8rem;
+}
+
+.footer__logo {
+    display: inline-block;
+}
+
+.footer__list {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+li {
+    display: flex;
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+li svg {
+    margin-right: 1rem;
+}
+
+.footer__icons {
+    display: flex;
+}
+
+.footer__icons svg {
+    fill: white;
+}
