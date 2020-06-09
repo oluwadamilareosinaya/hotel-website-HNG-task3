@@ -427,4 +427,8 @@ margin-bottom: 40px;
 margin-top: 5px;
 width:20%;
 }
+.right{
+    display: flex;
+    justify-content: flex-end;
+}
   
