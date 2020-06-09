@@ -82,6 +82,79 @@ nav a{
 .contact{
     background-color: #F5FAFE;
 }
+@media only screen and (max-width:438px)
+{
+    *
+    {
+        box-sizing: border-box;
+    }
+    header h2
+    {
+        font-size:25px !important;
+        left:35% !important;
+        bottom:15px !important;
+        line-height:30px !important;
+    }
+    header
+    {
+        height: 60px;
+    }
+    .side
+    {
+        left:70% !important;
+        top:18px !important;
+    }
+    .side button
+    {
+        font-size: 10px;
+        font-weight: lighter;
+    }
+    .fa 
+    {
+        padding-right: 10px !important;
+    }
+    nav{
+        border: 1px solid #585C6D !important;
+    }
+    nav a
+    {
+        font-size: 12px !important;
+        margin:0px 3px !important
+    }
+    .form-field h2, h1{
+        font-size: 20px !important;
+        line-height: 0px !important;
+        margin-bottom: 15px;
+    }
+  
+    .form-field p{
+        line-height: 10px !important;
+    }
+    .fonts{
+        font-size:12px !important;
+        line-height: 20px !important;
+    }
+    .form-group input[type=text],  textarea {
+        padding: 10px 15px !important;
+        border-radius: 4px !important;
+      }
+    .copyright{
+        display: grid;
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+    #co{
+        position: absolute;
+        top:20px;
+        left:20%;
+    }
+    #itoju{
+        left:40% !important;
+    }
+   
+
+
+}
 
 .form-field h2{
     text-align: center;
@@ -97,7 +170,6 @@ nav a{
     font-weight: normal;
     font-size: 20px;
     text-align: center;
-    line-height: 35px;
     color: #000000;
     line-height: 70px;
 }
@@ -136,6 +208,37 @@ nav a{
         line-height: 32px;
     }
 
+    @media only screen and (max-width: 800px) 
+    {
+            header h2{
+                position:absolute;
+                left:44%;
+                bottom:10%;
+                font-style: normal;
+                line-height: 88px;
+                letter-spacing: 0.065em;
+                font-size: 35px;
+                color: #D19F4E;
+                text-align: center;  
+            }
+            .fa{
+                padding-right: 20px;
+                color: #D19F4E;
+                font-size: 15px;
+            }
+            .side button{
+            background: #D19F4E;
+            border: 2px solid #D19F4E;
+            padding:8px;
+            color:white;
+            }
+            .container{
+                margin:5% 5% !important;
+                display: grid !important;
+                grid-template-columns: 24% 24% 24% 24% ;
+            }
+           
+    }
 
 
 @media only screen and (max-width: 600px) {
@@ -233,7 +336,7 @@ nav a{
         {
             display: grid !important;
             text-align: center;
-            grid-template-columns: 100%;
+            grid-template-columns: 100% !important;
         }
         .head h2
         {
@@ -266,8 +369,8 @@ nav a{
 
 .container{
     margin:5% 10%;
-    display: flex;
-    justify-content: space-around;
+    display: grid;  
+    grid-template-columns: 25% 25% 25% 25%;
 }
 
 #h
@@ -280,7 +383,7 @@ nav a{
 font-style: normal;
 font-weight: normal;
 font-size: 20px;
-color: #FFFFFF;
+color: #D19F4E;
 margin-bottom: 10%;
 letter-spacing: 0.05em;
 }
@@ -323,5 +426,9 @@ text-align: center;
 margin-bottom: 40px;
 margin-top: 5px;
 width:20%;
+}
+.right{
+    display: flex;
+    justify-content: flex-end;
 }
   
