@@ -1,0 +1,485 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, minmax(0, auto));
+}
+
+/* header Grid and its styles */
+header {
+    grid-row: 1/2;
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #15212c;
+    padding: 10px;
+}
+
+header h1 {
+    grid-column: 6/8;
+    text-transform: uppercase;
+    margin: 0;
+    color: #cca711;
+    font-weight: 200;
+}
+
+header p {
+    grid-column: 9/10;
+    color: #cca711;
+}
+
+header button {
+    grid-column: 10/11;
+    padding: 3px;
+    background-color: #cca711;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+/* nav Grid and its styles */
+nav {
+    grid-row: 2/3;
+    grid-column: 1/13;
+    display: grid;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+    background-color: #213344;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0;
+    padding: 5px;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.active {
+    color: #f1c40f;
+}
+
+nav li.home {
+    grid-column: 4/5;
+}
+
+nav li.room {
+    grid-column: 5/6;
+}
+
+nav li.about {
+    grid-column: 6/7;
+}
+
+nav li.facilities {
+    grid-column: 7/8;
+}
+
+nav li.contact {
+    grid-column: 8/9;
+}
+
+#banner {
+    grid-row: 3/4;
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, minmax(0, auto));
+    position: relative;
+}
+
+#banner img {
+    width: 100%;
+    height: 600px;
+    grid-row: 1/2;
+    grid-column: 1/13;
+}
+
+#banner #selection {
+    grid-row: 2/3;
+    grid-column: 3/13;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    top: -70px;
+    height: 0;
+}
+
+#banner #selection:after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+
+#selection small {
+    display: block;
+    color: #000;
+    font-weight: bold;
+}
+
+#banner #space {
+    grid-column: 1/3;
+    background-color: #fff;
+    border-right: 1px solid grey;
+    padding: 5px;
+}
+
+#space #suites {
+    width: 100%;
+    border: none;
+
+}
+
+#banner #meal {
+    padding: 5px;
+    grid-column: 3/5;
+    background-color: #fff;
+    border-right: 1px solid grey;
+}
+
+#meal #meals {
+    width: 100%;
+    border: none;
+}
+
+#banner #guest {
+    padding: 5px;
+    grid-column: 5/7;
+    background-color: #fff;
+    border-right: 1px solid grey;
+}
+
+#guest #guests {
+    width: 100%;
+    border: none;
+}
+
+#banner button {
+    grid-column: 7/9;
+    padding: 5px 15px;
+    margin-left: 10px;
+    background-color: #cca711;
+    color: #000;
+    border: none;
+    font-weight: bold;
+}
+
+ul#roomTypes {
+    grid-row: 4/5;
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 15px;
+    margin: 0;
+    grid-gap: 5px;
+    color: #000;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.637);
+}
+
+.activeroom {
+    color: #f1c40f;
+    text-decoration: underline;
+    text-decoration-style: unset;
+}
+
+ul#roomTypes li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul#roomTypes li.delux {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+ul#roomTypes li.junior {
+    grid-column: 5/6;
+    grid-row: 1/2;
+}
+
+ul#roomTypes li.exec {
+    grid-column: 7/10;
+    grid-row: 1/2;
+}
+
+ul#roomTypes li.balcony {
+    grid-column: 6/7;
+    grid-row: 1/2;
+}
+
+
+section {
+    grid-row: 5/6;
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, minmax(0, auto));
+    padding: 30px;
+    grid-gap: 1%;
+}
+
+section article {
+    background-color: #15212c;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, minmax(0, auto));
+    overflow: hidden;
+
+}
+
+section article img {
+    width: 500px;
+    height: 300px;
+}
+
+section article img {
+    grid-row: 1/2;
+    grid-column: 1/13;
+}
+
+section article h3 {
+    grid-row: 2/3;
+    grid-column: 1/7;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+section article i {
+    grid-row: 2/3;
+    grid-column: 11/13;
+    margin-top: 10px;
+}
+
+section article ul {
+    grid-row: 3/4;
+    grid-column: 1/6;
+}
+
+section article ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+
+}
+
+section article button {
+    grid-row: 4/5;
+    grid-column: 1/6;
+    margin: auto auto 15px 20px;
+    padding: 5px 10px;
+    color: white;
+    background-color: #cca711;
+    border: none;
+}
+
+section article p {
+    grid-row: 4/5;
+    grid-column: 11/13;
+    margin: 0;
+}
+
+section article#first {
+    grid-row: 1/2;
+    grid-column: 1/5;
+}
+
+section article#second {
+    grid-row: 1/2;
+    grid-column: 5/9;
+}
+
+section article#third {
+    grid-row: 1/2;
+    grid-column: 9/13;
+}
+
+section article#fourth {
+    grid-row: 2/3;
+    grid-column: 1/5;
+}
+
+
+section article#fifth {
+    grid-row: 2/3;
+    grid-column: 5/9;
+}
+
+section article#sixth {
+    grid-row: 2/3;
+    grid-column: 9/13;
+}
+
+
+footer {
+    grid-row: 6/7;
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, minmax(0, auto));
+    background-color: #15212c;
+    color: #fff;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    margin-top: 10px;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer #address {
+    grid-row: 1/2;
+    grid-column: 2/5;
+}
+
+footer #about {
+    grid-row: 1/2;
+    grid-column: 5/7;
+}
+
+footer #follow {
+    grid-row: 1/2;
+    grid-column: 7/9;
+}
+
+footer #more {
+    grid-row: 1/2;
+    grid-column: 9/11;
+}
+
+footer #arrowup {
+    grid-row: 1/2;
+    grid-column: 12/13;
+}
+
+footer #arrowup a {
+    color: white;
+}
+
+footer #base {
+    grid-row: 2/3;
+    grid-column: 2/12;
+    border-top: 1px solid #d8b1149f;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+footer #base p {
+    grid-column: 1/4;
+}
+
+footer #base h3 {
+    grid-column: 7/8;
+    font-weight: 200;
+    color: #d8b1149f;
+}
+
+
+/* for the contact us  page */
+#container main {
+    width: 100%;
+    height: 450px;
+    grid-row: 3/4;
+    grid-column: 1/13;
+    background-color: red;
+}
+
+#contact {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: 1/13;
+    grid-row: 4/5;
+
+}
+
+#contact article {
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, minmax(0, auto));
+}
+
+#contact p.txt {
+    grid-row: 2/3;
+    grid-column: 5/12;
+}
+
+#contact p.fill {
+    grid-row: 4/6;
+    grid-column: 6/12;
+    margin: 5px;
+}
+
+
+#contact h3 {
+    color: #cca711;
+    grid-row: 1/2;
+    grid-column: 6/12;
+}
+
+#contact h2 {
+    color: #cca711;
+    grid-row: 3/4;
+    grid-column: 5/12;
+    letter-spacing: 5px;
+    margin: 5px;
+}
+
+#contact form {
+    margin-top: 30px;
+    grid-column: 5/8;
+    grid-row: 4/5;
+}
+
+#contact form p {
+    margin: 5px;
+    margin-top: 15px;
+    padding: 0;
+}
+
+#contact form input {
+    width: 100%;
+    padding: 5px;
+}
+
+#contact button {
+
+    grid-row: 5/6;
+    color: #000;
+    background-color: #cca711;
+    border: none;
+    padding: 5px 10px;
+    grid-column: 7/8;
+    margin: 5px;
+}
