@@ -1,45 +1,46 @@
 *{
     margin:0;
-    padding:0px;
-    font-family: Montserrat;
+    padding:0;
 }
 body{
     background:#21273D;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header{
     height: 100px;
  background: #1C2133;
 position: relative;
+font-family: 'Montserrat', sans-serif;
 }
 
 header h2{
     position: absolute;
     left:44%;
     bottom:10%;
-    font-family: Montserrat;
-   font-style: normal;
+    font-weight: 200;
    line-height: 88px;
    letter-spacing: 0.065em;
    font-size: 40px;
    color: #D19F4E; 
 }
 .fa{
-    padding-right: 20px;
+    padding-right: 55px;
     color: #D19F4E;
-    font-size: 15px;
 }
 .side{
- position: absolute;
+    position: absolute;
    top: 32px;
    left:80%; 
    text-align: center;
 }
 .side button{
     background: #D19F4E;
-    border: 2px solid #D19F4E;
-    padding:10px;
+    border: none;
+    padding:10px 14px 10px 14px;
     color:white;
+    font-size: 11px;
+    font-weight: 700;
 }
 
 .side button:hover{
@@ -48,7 +49,7 @@ header h2{
 }
 
 nav{
-    border: 1.5px solid #585C6D;
+    border-bottom: 1px solid #585C6D;
     display: flex;
     justify-content: center;
     background: #21273D;
@@ -56,7 +57,6 @@ nav{
 
 nav a{
     text-decoration: none;
-    font-family: Segoe UI;
     font-style: normal;
     font-size: 15px;
     padding:20px;
@@ -80,39 +80,111 @@ nav a{
 }
 
 .contact{
-    background: #E5E5E5;
+    background-color: #F5FAFE;
+}
+@media only screen and (max-width:438px)
+{
+    *
+    {
+        box-sizing: border-box;
+    }
+    header h2
+    {
+        font-size:25px !important;
+        left:35% !important;
+        bottom:15px !important;
+        line-height:30px !important;
+    }
+    header
+    {
+        height: 60px;
+    }
+    .side
+    {
+        left:70% !important;
+        top:18px !important;
+    }
+    .side button
+    {
+        font-size: 10px;
+        font-weight: lighter;
+    }
+    .fa 
+    {
+        padding-right: 10px !important;
+    }
+    nav{
+        border: 1px solid #585C6D !important;
+    }
+    nav a
+    {
+        font-size: 12px !important;
+        margin:0px 3px !important
+    }
+    .form-field h2, h1{
+        font-size: 20px !important;
+        line-height: 0px !important;
+        margin-bottom: 15px;
+    }
+  
+    .form-field p{
+        line-height: 10px !important;
+    }
+    .fonts{
+        font-size:12px !important;
+        line-height: 20px !important;
+    }
+    .form-group input[type=text],  textarea {
+        padding: 10px 15px !important;
+        border-radius: 4px !important;
+      }
+    .copyright{
+        display: grid;
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+    #co{
+        position: absolute;
+        top:20px;
+        left:20%;
+    }
+    #itoju{
+        left:40% !important;
+    }
+   
+
+
 }
 
 .form-field h2{
-    font-family: Segoe UI;
     text-align: center;
     font-style: normal;
     font-size: 30px;
     line-height: 70px;
     color: #D19F4E;
-    }
-    .form-field p{
-    font-family: Montserrat;
+    padding-top: 50px;
+}
+    
+.form-field p{
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
-    line-height: 41px;
     color: #000000;
     line-height: 70px;
-    }
-    .form-field h1{
+}
+    
+.form-field > h1{
     font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 30px;
     text-align: center;
-    line-height: 26px;
-    line-height: 70px;
+    line-height: 60px;
     letter-spacing: 0.05em;
     color: #D19F4E;
-    }
-    .form-group{
+}
+    
+.form-group{
         width: 100%;
     }
     
@@ -136,6 +208,37 @@ nav a{
         line-height: 32px;
     }
 
+    @media only screen and (max-width: 800px) 
+    {
+            header h2{
+                position:absolute;
+                left:44%;
+                bottom:10%;
+                font-style: normal;
+                line-height: 88px;
+                letter-spacing: 0.065em;
+                font-size: 35px;
+                color: #D19F4E;
+                text-align: center;  
+            }
+            .fa{
+                padding-right: 20px;
+                color: #D19F4E;
+                font-size: 15px;
+            }
+            .side button{
+            background: #D19F4E;
+            border: 2px solid #D19F4E;
+            padding:8px;
+            color:white;
+            }
+            .container{
+                margin:5% 5% !important;
+                display: grid !important;
+                grid-template-columns: 24% 24% 24% 24% ;
+            }
+           
+    }
 
 
 @media only screen and (max-width: 600px) {
@@ -233,7 +336,7 @@ nav a{
         {
             display: grid !important;
             text-align: center;
-            grid-template-columns: 100%;
+            grid-template-columns: 100% !important;
         }
         .head h2
         {
@@ -266,8 +369,8 @@ nav a{
 
 .container{
     margin:5% 10%;
-    display: flex;
-    justify-content: space-around;
+    display: grid;  
+    grid-template-columns: 25% 25% 25% 25%;
 }
 
 #h
@@ -280,7 +383,7 @@ nav a{
 font-style: normal;
 font-weight: normal;
 font-size: 20px;
-color: #FFFFFF;
+color: #D19F4E;
 margin-bottom: 10%;
 letter-spacing: 0.05em;
 }
@@ -318,8 +421,14 @@ left: 48%;
 {
 padding: 10px;
 background: #D19F4E;
+border: none;
 text-align: center;
-margin-bottom: 10px;
+margin-bottom: 40px;
+margin-top: 5px;
 width:20%;
+}
+.right{
+    display: flex;
+    justify-content: flex-end;
 }
   
