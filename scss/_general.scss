@@ -1,0 +1,14 @@
+.desktop-nav {
+    display: none;
+}
+@include media-md{
+    .hide-desktop {
+        display: none;
+    }
+}
+
+@include media-md {
+    .show-desktop {
+        display: block;
+    }
+}

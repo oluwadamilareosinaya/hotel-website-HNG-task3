@@ -1,0 +1,25 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.mobile-nav .top-navbar {
+    height: 161px;
+    background-color: #1c2133;
+
+}
+
+.top-navbar .top-navbar__content .title h2{
+    font-size: 72px;
+    color: #D19F4E;
+}
+
+.uig {
+    background-color: #21273D;
+    height: 120px;
+    border-top: 1.5px solid #ffffff;
+    border-bottom: 1.5px solid #ffffff;
+}

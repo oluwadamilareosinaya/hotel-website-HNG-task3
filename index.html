@@ -1,35 +1,89 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITOJU</title>
+
+    <link href="public/lib/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="public/lib/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="public/lib/fontawesome/css/solid.css" rel="stylesheet">
+    <link href="public/lib/fontawesome/css/svg-with-js.css" rel="stylesheet">
+    <link href="public/lib/fontawesome/css/all.css" rel="stylesheet">
+    <link href="public/lib/fontawesome/css/regular.css" rel="stylesheet">
+    <link href="public/lib/fontawesome/css/v4-shims.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
     <!-- Bootstrap css dependencies-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!--end-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/contact-us.css">
-    <link rel="stylesheet" type="text/css" href="css/homepage.css">
     <!-- Bootstrap js dependencies-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <!-- end -->
-    <title>Homepage</title>
+    <link href="public/dist/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./public/css/homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h2>ITOJU</h2>
-        <span class="side"><i class="fa fa-user"></i> <button>BOOK NOW</button></span>
+    <header class="desktop-nav show-desktop">
+        <div class="top-navbar">
+            <div class="spacer"></div>
+            <div class="top-navbar__content">
+                <div class="title">
+                    <h2>ITOJU</h2>
+                </div>
+                <div class="float-right">
+                    <span>
+                        <i class="fa fa-user"></i>
+                    </span>
+                    <button class="button-primary">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-navbar">
+            <!-- <h3>fkkdk</h3> -->
+            <div class="main-navbar__content">
+                <ul>
+                    <li class="desktop-li"><a class="active" href="#">Home</a></li>
+                    <li class="desktop-li"><a href="rooms.html">Rooms</a></li>
+                    <li class="desktop-li"><a href="#">About</a></li>
+                    <li class="desktop-li"><a href="facility.html">Facilities</a></li>
+                    <li class="desktop-li"><a href="contact-us.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Room</a>
-        <a href="#">About</a>
-        <a href="#">Facilities</a>
-        <a href="#" style="color: #D19F4E;">Contact</a>
-    </nav>
-    
+    <header class="mobile-nav hide-desktop">
+        <div class="top-navbar">
+            <div class="top-navbar__content">
+                <div class="title">
+                    <h2>ITOJU</h2>
+                </div>
+                <div class="hamburger hide-desktop" id="hamburger">
+                    <span class="hamburger__stick" id="hamburger__stick"></span>
+                </div>
+                <!-- <span>
+                    <i class="fa fa-user"></i>
+                </span> -->
+                
+            </div>
+        </div>
+        <div class="main-navbar" id="mobile-nav">
+            <!-- <h3>fkkdk</h3> -->
+            <div class="devugo-navbar__content">
+                <button class="button-primary" id="book-now__btn">BOOK NOW</button>
+                <ul>
+                    <li class="mobile-li"><a class="active" href="#">Home</a></li>
+                    <li class="mobile-li"><a href="#">Rooms</a></li>
+                    <li class="mobile-li"><a href="#">About</a></li>
+                    <li class="mobile-li"><a href="#">Facilities</a></li>
+                    <li class="mobile-li"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
     <div class="blue-bg">
 
@@ -81,12 +135,12 @@
                 </div>
                 <div class="col-md-6 col-12">
                     <div class="box2">
-                        <img src="images/pic1.png" width="100%">
+                        <img src="images/pic1.png" width="100%" height="500px">
                     </div>
                 </div>
                 <div class="col-md-6 col-12">
                     <div class="box2">
-                        <img src="images/pic2.png" width="100%">
+                        <img src="images/pic2.png" width="100%" height="500px">
                     </div>
                 </div>
             </div>
@@ -191,7 +245,7 @@
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="box4">
-                            <img src="images/img1.png" width="100%">
+                            <img src="images/img2.jpg" width="100%">
                             <div class="box3">
                                 <p class="black-text">The pool side environment offer a spacious room and a lush balcony or a private garden to read and contemplate the waning afternoon.</p>
                                 <p class="brown-text">VIEW MORE</p>
@@ -200,7 +254,7 @@
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="box4">
-                            <img src="images/img1.png" width="100%">
+                            <img src="images/img3.jpg" width="100%">
                             <div class="box3">
                                 <p class="black-text">The pool side environment offer a spacious room and a lush balcony or a private garden to read and contemplate the waning afternoon.</p>
                                 <p class="brown-text">VIEW MORE</p>
@@ -209,7 +263,7 @@
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="box4">
-                            <img src="images/img1.png" width="100%">
+                            <img src="images/img4.jpg" width="100%">
                             <div class="box3">
                                 <p class="black-text">The pool side environment offer a spacious room and a lush balcony or a private garden to read and contemplate the waning afternoon.</p>
                                 <p class="brown-text">VIEW MORE</p>
@@ -247,48 +301,35 @@
 
     </div>
 
-    <footer class="box8">
-        <div class="container-footer">
-           <div  class="head">
-               <h2>ITOJU</h2>
-               <p>2, Cresent Road, off galadim, Abuja<br/> +62-812-7313-4321</p>
-           </div>
-
-           <div  class="head">
-            <h2>About Us</h2>
-            <ul class="ull">
-                <li>About</li>
-                <li>What we do</li>
-                <li>Project</li>
-                <li>How it works with us</li>
-            </ul>
-           </div>
-
-           <div  class="head">
-                <h2>Follow Us</h2>
-                <ul class="ull">
-                    <li>Instagram</li>
-                    <li>Facebook</li>
-                    <li>Linkedln</li>
-                    <li>Youtube</li>
-                </ul>
-           </div>
-
-           <div  class="head">
-                <h2>Additional Information</h2>
-                <ul class="ull">
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                    <li>How does it work?</li>
-                    <li>Frequently Asked Questions</li>
-                </ul>
-           </div>
+    <footer class="footer-wrapper">
+        <div class="foot-box foot1">
+            <h4>ITOJU</h4>
+            <p>2, Crescent Road, Off Galadim, Abuja</p>
+            <p>+62-812-7313-6489</p>
         </div>
-        <hr id="h"/>  
-          <div class="copyright">
-            <p id = "itoju">ITOJU</p>
-            <p id = "co">2019 &copy; ITOJU. All right reserved.</p>
-            
+        <div class="foot-box foot2">
+            <h4>About Us</h4>
+            <p>About</p>
+            <p>What we do</p>
+            <p>Project</p>
+            <p>How it works with us</p>
         </div>
-       </footer>
+        <div class="foot-box foot3">
+            <h4>Follow Us</h4>
+            <p>Instagram</p>
+            <p>Facebook</p>
+            <p>LinkedIn</p>
+            <p>Youtube</p>
+        </div>
+        <div class="foot-box foot4">
+            <h4>Additional Information</h4>
+            <p>About Us</p>
+            <p>Contact Us</p>
+            <p>How does it work?</p>
+            <p>Frequently asked questions</p>
+        </div>
+    </footer>
+
 </body>
+<script src="public/dist/js/devugo-navbar.js"></script>
+</html>

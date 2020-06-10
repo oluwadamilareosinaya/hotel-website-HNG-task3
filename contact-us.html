@@ -3,23 +3,78 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="public/lib/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="public/lib/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="public/lib/fontawesome/css/solid.css" rel="stylesheet">
+    <link href="public/lib/fontawesome/css/svg-with-js.css" rel="stylesheet">
+    <link href="public/lib/fontawesome/css/all.css" rel="stylesheet">
+    <link href="public/lib/fontawesome/css/regular.css" rel="stylesheet">
+    <link href="public/lib/fontawesome/css/v4-shims.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    <link href="public/dist/css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/contact-us.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/contact-us.css">
     <title>Contact Us</title>
 </head>
 <body>
-    <header>
-        <h2>ITOJU</h2>
-        <span class="side"><i class="fa fa-user"></i> <button>BOOK NOW</button></span>
+    <header class="desktop-nav show-desktop">
+        <div class="top-navbar">
+            <div class="spacer"></div>
+            <div class="top-navbar__content">
+                <div class="title">
+                    <h2>ITOJU</h2>
+                </div>
+                <div class="float-right">
+                    <span>
+                        <i class="fa fa-user"></i>
+                    </span>
+                    <button class="button-primary">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-navbar">
+            <!-- <h3>fkkdk</h3> -->
+            <div class="main-navbar__content">
+                <ul>
+                    <li class="desktop-li"><a href="index.html">Home</a></li>
+                    <li class="desktop-li"><a href="rooms.html">Rooms</a></li>
+                    <li class="desktop-li"><a href="#">About</a></li>
+                    <li class="desktop-li"><a href="facility.html">Facilities</a></li>
+                    <li class="desktop-li"><a class="active" href="contact-us.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Room</a>
-        <a href="#">About</a>
-        <a href="#">Facilities</a>
-        <a href="#" style="color: #D19F4E;">Contact</a>
-    </nav>
+    <header class="mobile-nav hide-desktop">
+        <div class="top-navbar">
+            <div class="top-navbar__content">
+                <div class="title">
+                    <h2>ITOJU</h2>
+                </div>
+                <div class="hamburger hide-desktop" id="hamburger">
+                    <span class="hamburger__stick" id="hamburger__stick"></span>
+                </div>
+                <!-- <span>
+                    <i class="fa fa-user"></i>
+                </span> -->
+                
+            </div>
+        </div>
+        <div class="main-navbar" id="mobile-nav">
+            <!-- <h3>fkkdk</h3> -->
+            <div class="devugo-navbar__content">
+                <button class="button-primary" id="book-now__btn">BOOK NOW</button>
+                <ul>
+                    <li class="mobile-li"><a class="active" href="#">Home</a></li>
+                    <li class="mobile-li"><a href="#">Rooms</a></li>
+                    <li class="mobile-li"><a href="#">About</a></li>
+                    <li class="mobile-li"><a href="#">Facilities</a></li>
+                    <li class="mobile-li"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
     <section class="image-container">
         <img src="images/layer.png" alt="" id="image"/>
@@ -30,7 +85,7 @@
          <h2>Contact Us</h2>
          <p>How would you like to contact us? by email here:</p>
          <h1>hello.itoju@gmail.com</h1>
-         <p>or fill this form</p>
+         <p class="fill">or fill this form</p>
 
          <div class="form-group">
              <label class="fonts" for="fname">First Name</label>
@@ -48,51 +103,37 @@
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-           <div  class="head">
-               <h2>ITOJU</h2>
-               <p>2, Cresent Road, off galadim, Abuja<br/> +62-812-7313-4321</p>
-           </div>
-
-           <div  class="head">
-            <h2>About Us</h2>
-            <ul class="ull">
-                <li>About</li>
-                <li>What we do</li>
-                <li>Project</li>
-                <li>How it works with us</li>
-            </ul>
-           </div>
-
-           <div  class="head">
-                <h2>Follow Us</h2>
-                <ul class="ull">
-                    <li>Instagram</li>
-                    <li>Facebook</li>
-                    <li>Linkedln</li>
-                    <li>Youtube</li>
-                </ul>
-           </div>
-
-           <div  class="head">
-                <h2>Additional Information</h2>
-                <ul class="ull">
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                    <li>How does it work?</li>
-                    <li>Frequently Asked Questions</li>
-                </ul>
-           </div>
+    <footer class="footer-wrapper">
+        <div class="foot-box foot1">
+            <h4>ITOJU</h4>
+            <p>2, Crescent Road, Off Galadim, Abuja</p>
+            <p>+62-812-7313-6489</p>
         </div>
-        <hr id="h"/>  
-          <div class="copyright">
-            <p id = "itoju">ITOJU</p>
-            <p id = "co">2019 &copy; ITOJU. All right reserved.</p>
-            
+        <div class="foot-box foot2">
+            <h4>About Us</h4>
+            <p>About</p>
+            <p>What we do</p>
+            <p>Project</p>
+            <p>How it works with us</p>
         </div>
-       </footer>
+        <div class="foot-box foot3">
+            <h4>Follow Us</h4>
+            <p>Instagram</p>
+            <p>Facebook</p>
+            <p>LinkedIn</p>
+            <p>Youtube</p>
+        </div>
+        <div class="foot-box foot4">
+            <h4>Additional Information</h4>
+            <p>About Us</p>
+            <p>Contact Us</p>
+            <p>How does it work?</p>
+            <p>Frequently asked questions</p>
+        </div>
+    </footer>
 
 
 </body>
+
+<script src="public/dist/js/devugo-navbar.js"></script>
 </html>
