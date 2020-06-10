@@ -1,10 +1,5 @@
 body{
-<<<<<<< HEAD:public/css/contact-us.css
     margin: 0;
-=======
-    background:#21273D;
-    font-family: 'Montserrat';
->>>>>>> 40ae93a6e760813711ea36953b0af4fd42a2183f:css/contact-us.css
 }
 
 .desktop-nav .top-navbar {
@@ -22,14 +17,8 @@ body{
     margin-bottom: 30px;
 }
 
-<<<<<<< HEAD:public/css/contact-us.css
 .desktop-nav .main-navbar__content {
     border-bottom: 1px solid grey;
-=======
-.side button:hover{
-    transition: 0.77s;
-    background-color:#856123; 
->>>>>>> 40ae93a6e760813711ea36953b0af4fd42a2183f:css/contact-us.css
 }
 
 .form-field h2{
@@ -292,7 +281,6 @@ width:20%;
     background: #21273D;
     font-family: 'Lato', sans-serif;
   
-<<<<<<< HEAD:public/css/contact-us.css
   }
   
   .foot-box {
@@ -385,8 +373,3 @@ width:20%;
       padding-left: 60px;
     }
   }
-=======
-
-
-
->>>>>>> 40ae93a6e760813711ea36953b0af4fd42a2183f:css/contact-us.css
