@@ -1,0 +1,153 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background:#21273D;
+font-family: 'Montserrat';
+    background: #E5E5E5;
+}
+.room-container{
+    margin: 2% 5%;
+    width: 90%;
+    height:500px;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3% ;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+.image-room{
+    width: 100%;
+    background-color:#21273D;
+    color:white;
+}
+.checked {
+    color: grey;
+}
+.flexing{
+    display: flex;
+    vertical-align: middle;
+    justify-content: space-between;
+    padding:20px 20px;
+    margin-bottom: 10px;
+}
+.footer{
+    display: flex;
+    vertical-align: middle;
+    justify-content: space-between;
+    padding:10px 20px;
+}
+.im{
+    object-fit: fill;
+    width:100%;
+    
+}
+.icon{
+    padding-right: 10px;
+}
+.rating{
+    color: orange;
+    font-size: 15px;
+}
+.list-item ul li{
+    list-style-type: none;
+    padding:10px 20px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+.coloring{
+ background-color:#21273D;
+}
+.sub
+{
+padding: 10px;
+background: #D19F4E;
+color:white;
+border: none;
+text-align: center;
+margin-bottom: 40px;
+margin-top: 5px;
+width:30%;
+}
+.sub:hover{
+    transition: 0.77s;
+    background-color:#856123; 
+}
+.footer p{
+    margin-top:15px;
+}
+@media only screen and (max-width:350px ) 
+{
+    .room-container{
+        display: grid !important;
+        grid-template-columns: 100% !important ;
+        grid-column-gap: 0px !important;
+    }
+    .flexing h1{
+        font-size: 15px !important;
+    }
+    .rating{
+        font-size: 10px !important;
+    }
+    .sub{
+        padding: 5px !important;
+    }
+    .footer p{
+        margin-top: 10px !important;
+    }
+    .list-item ul li{
+        font-size: 10px !important;
+    }
+}
+
+@media only screen and (max-width:438px)
+{
+    .room-container{
+        display: grid;
+        grid-template-columns: 100% !important;
+        grid-column-gap: 0px !important;
+    }
+    .flexing h1{
+        font-size: 20px;
+    }
+    .rating{
+        font-size: 12px;
+    }
+    .sub{
+        padding: 5px !important;
+    }
+    .footer p{
+        margin-top: 10px !important;
+    }
+}
+
+@media only screen and (max-width:600px)
+{
+    .room-container{
+        grid-template-columns: 100% !important;
+        grid-column-gap: 0px !important;
+    }
+    .flexing h1{
+        font-size: 20px;
+    }
+    .rating{
+        font-size: 12px;
+    }
+    .sub{
+        padding: 5px !important;
+    }
+    .footer p{
+        margin-top: 10px !important;
+    }
+}
+
+@media only screen and (max-width:800px)
+{
+    .room-container{
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 1em !important;
+    }
+  
+}

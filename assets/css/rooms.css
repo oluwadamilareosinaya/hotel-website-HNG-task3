@@ -1,0 +1,194 @@
+/* remove default browser setting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+  
+
+body {
+    font: 15px arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0; 
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+
+header {
+  height: 100px;
+  background: #1C2133;
+  position: relative;
+} 
+
+.logo {
+  position: absolute;
+  left:44%;
+  bottom:10%;
+  color: #D19F4E; 
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: 0.065em;
+  font-size: 40px;
+}
+
+nav {
+  border: 1.5px solid #585C6D;
+  display: flex;
+  justify-content: center;
+  background: #21273D;
+} 
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  grid-gap: 20px;
+  padding: 0;
+  text-decoration: none;
+}
+ .nav-list a {
+   background: #21273d;
+   display: flex;
+   text-decoration: none;
+   padding: 0.8rem;
+   list-style: none;
+   text-align: center ;
+   text-transform: capitalize;
+   font-size: 1.1rem;
+   font-style: normal;
+   font-weight: 200;
+   line-height: 32px;
+ }
+
+
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+.container {
+  padding: 16px;
+}
+
+.container-nav {
+  float: center;
+}
+
+.top {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/rooms&rate\ hero.png);
+  height: 70vh;
+  background-attachment: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* #logo {
+  float: left;
+  margin-top: 15px;
+  margin-left: 138px;
+}
+
+#logo h1 {
+  margin: 0;
+} */
+
+
+/* rooms */
+.row {
+  max-width: 114em;
+}
+
+#rooms {
+  margin-top: 15px;
+}
+
+#rooms-cards > .img {
+  width: 100px;
+}
+
+.img {
+  background: url(../images/room1.png);
+}
+
+.rooms {
+    padding: 10px 20px;
+    height: 300px;
+}
+
+.room-cards {
+  flex-direction: row;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+}
+
+
+/* room button */
+
+
+/* footer */
+
+.footer {
+  display: flex;
+  padding: 20px;
+  margin-top: 0px;
+  color: #D19F4E;
+  background-color: #21273d;
+  text-decoration: none;
+  justify-content: space-around;
+}
+
+.column h2{
+  line-height: 0;
+  color: #D19F4E  !important;
+  margin-bottom: 25px !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-bottom: 10%;
+  letter-spacing: 0.05em;
+}
+
+.column ul li,p
+{
+    list-style-type: none;
+    color:white;
+    font-size:12px;
+    line-height: 26px; 
+    font-style: normal;
+}
+
+.column h2
+        {
+  line-height: 0;
+  color: #ffffff  !important;
+  margin-bottom: 25px !important;
+        }
+
+.socket {
+  padding: 20px;
+  margin-top: 0px;
+  color: #ffffff;
+  background-color: #21273d;
+  text-decoration: none;
+}
+
+.copyright {
+  padding: 0;
+  line-height: 26px;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  padding-bottom: -40px;
+  position: relative;
+} 
+
+

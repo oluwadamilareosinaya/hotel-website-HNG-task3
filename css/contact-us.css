@@ -4,7 +4,7 @@
 }
 body{
     background:#21273D;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
 }
 
 header{
@@ -45,7 +45,7 @@ header h2{
 
 .side button:hover{
     transition: 0.77s;
-    background-color:#856123; ;
+    background-color:#856123; 
 }
 
 nav{
@@ -432,3 +432,6 @@ width:20%;
     justify-content: flex-end;
 }
   
+
+
+
