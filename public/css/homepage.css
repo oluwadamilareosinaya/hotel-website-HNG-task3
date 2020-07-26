@@ -3,6 +3,10 @@ body{
     background-color: #F5FAFE;
 }
 
+.lead {
+    color: #fff;
+}
+
 .footer-wrapper {
     display: grid;
     gap: 10px;
